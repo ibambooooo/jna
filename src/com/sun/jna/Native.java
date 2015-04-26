@@ -743,7 +743,9 @@ public final class Native implements Version {
             }
         }
         if (!Boolean.getBoolean("jna.noclasspath")) {
-            loadNativeDispatchLibraryFromClasspath();
+            // FIXME Android interception
+            //loadNativeDispatchLibraryFromClasspath();
+            System.loadLibrary("jnidispatch");
         }
         else {
             throw new UnsatisfiedLinkError("Unable to locate JNA native support library");
