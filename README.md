@@ -1,6 +1,6 @@
 Read the original README.md at README-ORIGINAL.md
 
-This is a dirty branch to make JNA work on Android while still using Gradle.
+This is a dirty branch to make JNA work on Android while still using Gradle. It breaks behaviour for other platforms as the library loading process is tied to Android's Gradle.
 
 Instructions:
 
